@@ -1,5 +1,60 @@
 body {
     padding: 0;
     margin: 0;
-    background: red;
+}
+
+/*------ header ------*/
+header {
+    height: 150px;
+    background: rgb(34,34,34);
+}
+
+header nav {
+    margin: 0 auto;
+    width: 800px;"
+}
+
+header .logo {
+    float: left;
+    padding-top: 62px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: yellow;
+}
+
+header ul {
+    margin: 0;
+    padding-top: 35px;
+    float: right;
+    list-style: none;
+    color: rgb(158, 158, 158);
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li:first-child {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid;
+}
+
+
+/*------ footer ------*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: rgb(34,34,34);
+}
+
+footer div {
+    margin: 0 auto;
+    width: 800px;
+    padding-top: 23px;
+    text-align: center;
+    color: white;
 }
