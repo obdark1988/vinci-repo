@@ -5,15 +5,17 @@
     <script src="http://code.angularjs.org/1.2.1/angular-route.min.js"></script>
     <script src="app/app.js"></script>
     <script src="app/controllers/loginController.js"></script>
+    <script src="app/directives/headerDirective.js"></script>
     <script src="app/route/route.js"></script>
 </head>
 
-<body>
+<body ng-app="myApp">
 
-<div ng-app="myApp" >
+<header-directive></header-directive>
+
+<div>
     <h1>this is title</h1>
     <div ng-view></div>
-
 </div>
 
 </body>
