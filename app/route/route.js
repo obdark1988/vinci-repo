@@ -1,5 +1,5 @@
-angular.module('myApp').config(['$routeProvider',
-    function($routeProvider) {
+angular.module('myApp').config(['$routeProvider', '$locationProvider',
+    function($routeProvider, $locationProvider) {
         $routeProvider.
             when('/login', {
                 templateUrl: 'views/loginForm.html',
@@ -15,5 +15,6 @@ angular.module('myApp').config(['$routeProvider',
             }).
             otherwise({ redirectTo:'/'});
 
+        //$locationProvider.html5Mode(true);
     }
 ]);
