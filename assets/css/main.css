@@ -4,6 +4,17 @@ body {
     font-family: Arial;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
+}
+
 /*------ header ------*/
 header {
     height: 150px;
@@ -58,4 +69,10 @@ footer div {
     padding-top: 23px;
     text-align: center;
     color: white;
+}
+
+
+/*------ login form ------*/
+form {
+    margin: 0 auto;
 }
