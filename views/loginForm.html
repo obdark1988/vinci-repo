@@ -1,6 +1,9 @@
+<div ng-controller="signUpController">
+    Username: <input type="text" ng-model="username"><br>
+    Password: <input type="text" ng-model="password"><br>
+    <br>
+    loginInfo: {{username + " " + password}}
 
-Username: <input type="text" ng-model="username"><br>
-Password: <input type="text" ng-model="password"><br>
-<br>
-loginInfo: {{username + " " + password}}
-
+    <button ng-click="signup()">123</button>
+    <div>{{errorMessage}}</div>
+</div>
