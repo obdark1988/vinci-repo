@@ -24,7 +24,8 @@ angular.module('myApp').controller('loginController', function($scope, $http, $l
     {
         $http($scope.request).then(
             function onSuccess(response){
-                $scope.access_token = response.data.account.auth.access_token;
+                //$scope.access_token = response.auth.access_token;
+                console.log(response.data.auth.access_token);
                 //$location.path('/userInfo');
             },
             function onError(response){
